@@ -1,10 +1,3 @@
 
-// const [name , p, rating, customers, dis]=product1; // destructuring of array
-// console.log(price);
- 
-
-
-// let {p, printproductNAme, avgRating}=product
-
-
-// console.log(p, printproductNAme(), avgRating);
+let notEligible = students.filter(student => student.roll>30).map((student) => student.name)
+console.log(notEligible);
