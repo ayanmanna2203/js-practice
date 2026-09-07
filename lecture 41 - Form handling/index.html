@@ -13,21 +13,31 @@
 
     <form action="">
         <div>
-            <label for="name">Name : </label>
+            <div>
+                <label for="name">Name : </label>
             <input type="text" id="name">
-            <span id="errormassage" style="color: red;"></span>
+            <span class="errormassage" style="color: red;"></span>
             <br>
-            <label for="email">Email : </label>
+            </div>
+           <div>
+             <label for="email">Email : </label>
             <input type="email" id="email">
+             <span class="errormassage" style="color: red;"></span>
             <br>
-            <label for="pass">Password :</label>
+           </div>
+          <div>
+              <label for="pass">Password :</label>
             <input type="password" id="pass">
             <p id="hint" class="hidden">Must be in 8 characters</p>
+             <span class="errormassage" style="color: red;"></span>
             <br>
+          </div>
 
-            <label for="bio">Bio :</label>
+          <div>
+              <label for="bio">Bio :</label>
             <textarea name="bio" id="bio" placeholder="Enter your bio"></textarea>
             <p id="charcount">150 charecters remainig</p>
+          </div>
 
             <div>
                 <label for="Country">Select Your Country :</label>
@@ -37,11 +47,16 @@
                     <option value="uk">UK</option>
                 </select>
             </div>
-
+            <div>
+                
             <input type="checkbox" id="checkbox">
             <label for="checkbox">T agree the terms and conditions</label>
+             <span class="errormassage" style="color: red;"></span>
             <br>
+            </div>
             <button>Create Account</button>
+            <h2 id="successmsg" class="hidden">your Account has created successfully!!</h2>
+
         </div>
     </form>
 
