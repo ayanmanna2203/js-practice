@@ -45,6 +45,23 @@ const body =document.querySelector("body")
 
 let colorStr = "012356789abcdef"
 
-let color= "372648"
+let color= ""
 
+// body.style.backgroundColor= `#${color}`
+
+// for(let i=0 ; i< 6 ;i++){
+//     let randomValue = Math.floor(Math.random() * colorStr.length) +1
+//     color = color + colorStr[randomValue]
+// }
+// console.log(color);
+
+setInterval(() => {
+    color=""
+    for(let i=0 ; i< 6 ;i++){
+    let randomValue = Math.floor(Math.random() * colorStr.length) +1
+    color = color + colorStr[randomValue]
+}
 body.style.backgroundColor= `#${color}`
+}, 500);
+
+// body.style.backgroundColor= `#${color}`
